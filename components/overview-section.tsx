@@ -25,7 +25,7 @@ export function OverviewSection() {
         </div>
 
         {/* Code Example */}
-        <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-[14px] overflow-hidden mt-[2rem] font-mono text-[0.82rem] leading-[1.8] max-w-[800px] reveal">
+        <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-[14px] overflow-hidden mt-[3rem] font-mono text-[0.82rem] leading-[1.8] max-w-[800px] reveal">
           <div className="flex items-center gap-2 px-5 py-3 bg-[var(--bg-card)] border-b border-[var(--border-color)] text-[0.75rem] text-[var(--text-muted)]">
             <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />

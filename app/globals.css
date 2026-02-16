@@ -2,7 +2,7 @@
 
 @theme inline {
   --font-sans: var(--font-display), 'Plus Jakarta Sans', sans-serif;
-  --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
+  --font-mono: var(--font-mono-loaded), 'JetBrains Mono', monospace;
 }
 
 :root {
@@ -76,6 +76,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .use-case-grid {
