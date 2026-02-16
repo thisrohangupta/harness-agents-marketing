@@ -36,7 +36,7 @@ export function Hero() {
         Harness Agents are AI-powered autonomous workers that run inside your pipelines — building, deploying, testing, remediating, and optimizing your software delivery lifecycle from commit to production.
       </p>
       <div
-        className="flex gap-4 justify-center flex-wrap"
+        className="flex gap-[1rem] justify-center flex-wrap"
         style={{ animation: 'fade-up 0.8s ease-out 0.3s both' }}
       >
         <a
@@ -58,7 +58,7 @@ export function Hero() {
         </a>
       </div>
       <div
-        className="flex gap-[3rem] justify-center mt-[3.5rem] max-md:gap-6 max-md:flex-wrap"
+        className="flex gap-[3rem] justify-center mt-[3.5rem] max-md:gap-[1.5rem] max-md:flex-wrap"
         style={{ animation: 'fade-up 0.8s ease-out 0.4s both' }}
       >
         <div className="text-center">

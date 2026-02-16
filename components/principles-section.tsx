@@ -35,23 +35,23 @@ export function PrinciplesSection() {
   return (
     <section id="principles" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]">
       <div className="max-w-[1100px] mx-auto">
-        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
+        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// DESIGN PHILOSOPHY'}
         </div>
-        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
+        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-[1rem] text-[var(--text-primary)] reveal">
           Built on What You Already Use
         </h2>
         <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
           Agents don{"'"}t replace your pipeline infrastructure — they extend it. Same YAML, same RBAC, same audit trail. New intelligence, same control plane.
         </div>
 
-        <div className="grid gap-6" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+        <div className="grid gap-[1.5rem]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
           {principles.map((p) => (
             <div
               key={p.title}
               className="p-[1.8rem] border-l-2 border-[var(--border-color)] transition-colors hover:border-[var(--accent-blue)] reveal"
             >
-              <h3 className="text-[0.95rem] font-bold mb-2 text-[var(--text-primary)]">{p.title}</h3>
+              <h3 className="text-[0.95rem] font-bold mb-[0.5rem] text-[var(--text-primary)]">{p.title}</h3>
               <p className="text-[0.82rem] text-[var(--text-secondary)] leading-[1.7]">{p.description}</p>
             </div>
           ))}

@@ -2,17 +2,17 @@ export function OverviewSection() {
   return (
     <section className="bg-[var(--bg-primary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]" id="what">
       <div className="max-w-[1100px] mx-auto">
-        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
+        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// OVERVIEW'}
         </div>
-        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
+        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-[1rem] text-[var(--text-primary)] reveal">
           What Are Harness Agents?
         </h2>
         <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
           Harness Agents are autonomous AI workers that execute DevOps tasks inside Harness pipelines. Unlike standalone AI assistants, agents are pipeline-native — they inherit your pipeline{"'"}s context, permissions, secrets, and governance controls while taking multi-step actions across your SDLC.
         </div>
 
-        <div className="grid gap-6 max-md:grid-cols-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+        <div className="grid gap-[1.5rem] max-md:grid-cols-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
           <ArchCard icon="⚡" title="Pipeline-Native Execution">
             Agents run as first-class pipeline steps — not as external scripts or webhook callbacks. They share the pipeline{"'"}s execution context, secrets, connectors, and RBAC scope. Every action is logged, auditable, and governed.
           </ArchCard>
@@ -25,7 +25,7 @@ export function OverviewSection() {
         </div>
 
         {/* Code Example */}
-        <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-[14px] overflow-hidden mt-8 font-mono text-[0.82rem] leading-[1.8] max-w-[800px] reveal">
+        <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-[14px] overflow-hidden mt-[2rem] font-mono text-[0.82rem] leading-[1.8] max-w-[800px] reveal">
           <div className="flex items-center gap-2 px-5 py-3 bg-[var(--bg-card)] border-b border-[var(--border-color)] text-[0.75rem] text-[var(--text-muted)]">
             <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
@@ -57,10 +57,10 @@ function ArchCard({ icon, title, children }: { icon: string; title: string; chil
   return (
     <div className="group bg-[var(--bg-card)] border border-[var(--border-color)] rounded-[14px] p-[2rem] transition-all relative overflow-hidden hover:border-[var(--text-muted)] hover:bg-[var(--bg-card-hover)] hover:-translate-y-1 reveal">
       <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[var(--accent-blue)] to-[var(--accent-purple)] opacity-0 transition-opacity group-hover:opacity-100" />
-      <div className="w-11 h-11 rounded-[10px] flex items-center justify-center text-[1.3rem] mb-5 bg-[var(--bg-secondary)] border border-[var(--border-color)]">
+      <div className="w-[44px] h-[44px] rounded-[10px] flex items-center justify-center text-[1.3rem] mb-[1.2rem] bg-[var(--bg-secondary)] border border-[var(--border-color)]">
         {icon}
       </div>
-      <h3 className="text-[1.05rem] font-bold mb-2.5 tracking-[-0.01em] text-[var(--text-primary)]">
+      <h3 className="text-[1.05rem] font-bold mb-[0.6rem] tracking-[-0.01em] text-[var(--text-primary)]">
         {title}
       </h3>
       <p className="text-[0.88rem] text-[var(--text-secondary)] leading-[1.7]">{children}</p>

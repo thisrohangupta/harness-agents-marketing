@@ -32,10 +32,10 @@ export function RoadmapSection() {
   return (
     <section className="bg-[var(--bg-secondary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]" id="roadmap">
       <div className="max-w-[1100px] mx-auto">
-        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
+        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// ROADMAP'}
         </div>
-        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
+        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-[1rem] text-[var(--text-primary)] reveal">
           {"What\u2019s Shipping"}
         </h2>
         <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
@@ -67,7 +67,7 @@ export function RoadmapSection() {
                   {item.badge}
                 </span>
               </div>
-              <h3 className="text-[1rem] font-bold mb-1.5 text-[var(--text-primary)]">{item.title}</h3>
+              <h3 className="text-[1rem] font-bold mb-[0.4rem] text-[var(--text-primary)]">{item.title}</h3>
               <p className="text-[0.85rem] text-[var(--text-secondary)] leading-[1.7]">{item.description}</p>
             </div>
           ))}
