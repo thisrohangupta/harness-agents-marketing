@@ -45,7 +45,7 @@ export function PrinciplesSection() {
           Agents don{"'"}t replace your pipeline infrastructure — they extend it. Same YAML, same RBAC, same audit trail. New intelligence, same control plane.
         </div>
 
-        <div className="grid gap-[1.5rem]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+        <div className="principles-grid">
           {principles.map((p) => (
             <div
               key={p.title}

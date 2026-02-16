@@ -51,7 +51,7 @@ export function SecuritySection() {
           Agentic automation introduces new attack surfaces — prompt injection, tool side-effects, data exfiltration. Our security model is built on explicit constraints over implicit trust.
         </div>
 
-        <div className="grid gap-[1.2rem]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+        <div className="security-grid">
           {securityItems.map((item) => (
             <div
               key={item.title}

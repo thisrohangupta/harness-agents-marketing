@@ -129,8 +129,8 @@ export function ArchitectureSection() {
 
           <div
             key={activeTab}
-            className="grid gap-[1.5rem] max-md:grid-cols-1"
-            style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', animation: "fade-up 0.4s ease-out" }}
+            className="arch-grid"
+            style={{ animation: "fade-up 0.4s ease-out" }}
           >
             {tabContent[activeTab].map((card) => (
               <div

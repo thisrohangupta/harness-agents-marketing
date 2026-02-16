@@ -70,3 +70,38 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Grid Layouts ── */
+.arch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .arch-grid,
+  .use-case-grid,
+  .principles-grid,
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -12,7 +12,7 @@ export function OverviewSection() {
           Harness Agents are autonomous AI workers that execute DevOps tasks inside Harness pipelines. Unlike standalone AI assistants, agents are pipeline-native — they inherit your pipeline{"'"}s context, permissions, secrets, and governance controls while taking multi-step actions across your SDLC.
         </div>
 
-        <div className="grid gap-[1.5rem] max-md:grid-cols-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+        <div className="arch-grid">
           <ArchCard icon="⚡" title="Pipeline-Native Execution">
             Agents run as first-class pipeline steps — not as external scripts or webhook callbacks. They share the pipeline{"'"}s execution context, secrets, connectors, and RBAC scope. Every action is logged, auditable, and governed.
           </ArchCard>

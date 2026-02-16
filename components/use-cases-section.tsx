@@ -71,7 +71,7 @@ export function UseCasesSection() {
           Agents handle the high-value, judgment-intensive work that can{"'"}t be reduced to simple scripts — but shouldn{"'"}t require a human in the loop for every instance.
         </div>
 
-        <div className="grid gap-[1.5rem] max-md:grid-cols-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
+        <div className="use-case-grid">
           {useCases.map((uc) => (
             <div
               key={uc.title}
