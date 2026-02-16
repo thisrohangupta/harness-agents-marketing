@@ -9,7 +9,7 @@ export function Hero() {
           animation: 'pulse-glow 6s ease-in-out infinite',
         }}
       />
-      <div className="max-w-[1100px] mx-auto relative">
+      <div className="max-w-[1200px] mx-auto px-8 relative">
         <div
           className="inline-flex items-center gap-2 bg-[var(--bg-card)] border border-[var(--border-color)] rounded-full px-[18px] py-1.5 text-[0.8rem] text-[var(--text-secondary)] mb-[2rem]"
           style={{ animation: 'fade-up 0.8s ease-out' }}
@@ -21,7 +21,7 @@ export function Hero() {
           Introducing Harness Agents
         </div>
         <h1
-          className="text-[clamp(2.8rem,6vw,4.5rem)] font-extrabold tracking-[-0.04em] leading-[1.1] max-w-[900px] mx-auto mb-[1.5rem]"
+          className="text-[clamp(2.8rem,6vw,4.5rem)] font-extrabold tracking-[-0.02em] leading-[1.2] max-w-[900px] mx-auto mb-[1.5rem]"
           style={{ animation: 'fade-up 0.8s ease-out 0.1s both' }}
         >
           <span className="bg-gradient-to-br from-[var(--accent-blue)] via-[var(--accent-cyan)] to-[var(--accent-purple)] bg-clip-text text-transparent">
@@ -31,13 +31,13 @@ export function Hero() {
           {'Pipeline\u2011Native AI Agents.'}
         </h1>
         <p
-          className="text-[1.15rem] text-[var(--text-secondary)] max-w-[680px] mx-auto mb-[2.5rem] leading-[1.8] font-normal"
+          className="text-[1.15rem] text-[var(--text-secondary)] max-w-[600px] mx-auto mb-[2.5rem] leading-[1.6] font-normal text-center"
           style={{ animation: 'fade-up 0.8s ease-out 0.2s both' }}
         >
           Harness Agents are AI-powered autonomous workers that run inside your pipelines — building, deploying, testing, remediating, and optimizing your software delivery lifecycle from commit to production.
         </p>
         <div
-          className="flex gap-[1rem] justify-center flex-wrap"
+          className="flex gap-4 justify-center items-center flex-wrap mt-8"
           style={{ animation: 'fade-up 0.8s ease-out 0.3s both' }}
         >
           <a

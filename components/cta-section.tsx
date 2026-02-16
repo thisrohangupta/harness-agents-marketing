@@ -7,7 +7,7 @@ export function CtaSection() {
           background: 'radial-gradient(circle, var(--glow-purple) 0%, transparent 70%)',
         }}
       />
-      <div className="max-w-[1100px] mx-auto relative">
+      <div className="max-w-[1200px] mx-auto relative">
         <h2 className="text-[clamp(2rem,4vw,2.8rem)] font-extrabold tracking-[-0.03em] mb-[1rem] text-[var(--text-primary)] reveal">
           AI for Everything After Code
         </h2>
@@ -43,7 +43,7 @@ export function CtaSection() {
 export function Footer() {
   return (
     <footer className="py-[3rem] px-8 border-t border-[var(--border-subtle)] text-center text-[0.78rem] text-[var(--text-muted)]">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <p>
           {'Harness AI \u00B7 Agents \u00B7 '}
           <a

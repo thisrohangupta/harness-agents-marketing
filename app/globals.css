@@ -74,9 +74,15 @@ body {
 /* ── Grid Layouts ── */
 .arch-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .arch-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .use-case-grid {
@@ -99,7 +105,6 @@ body {
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .arch-grid,
   .use-case-grid,
   .principles-grid,
   .security-grid {

@@ -99,7 +99,7 @@ export function ArchitectureSection() {
 
   return (
     <section id="architecture" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// ARCHITECTURE'}
         </div>
@@ -135,16 +135,16 @@ export function ArchitectureSection() {
             {tabContent[activeTab].map((card) => (
               <div
                 key={card.title}
-                className="group bg-[var(--bg-card)] border border-[var(--border-color)] rounded-[14px] p-[2rem] transition-all relative overflow-hidden hover:border-[var(--text-muted)] hover:bg-[var(--bg-card-hover)] hover:-translate-y-1"
+                className="group bg-[var(--bg-card)] border border-[var(--border-color)] rounded-[14px] p-6 transition-all relative overflow-hidden flex flex-col gap-4 hover:border-[var(--text-muted)] hover:bg-[var(--bg-card-hover)] hover:-translate-y-1"
               >
                 <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[var(--accent-blue)] to-[var(--accent-purple)] opacity-0 transition-opacity group-hover:opacity-100" />
-                <div className="w-[44px] h-[44px] rounded-[10px] flex items-center justify-center text-[1.3rem] mb-[1.2rem] bg-[var(--bg-secondary)] border border-[var(--border-color)]">
+                <div className="w-[44px] h-[44px] rounded-[10px] flex items-center justify-center text-[1.3rem] bg-[var(--bg-secondary)] border border-[var(--border-color)]">
                   {card.icon}
                 </div>
-                <h3 className="text-[1.05rem] font-bold mb-[0.6rem] tracking-[-0.01em] text-[var(--text-primary)]">
+                <h3 className="text-[1.05rem] font-bold tracking-[-0.01em] text-[var(--text-primary)] my-0">
                   {card.title}
                 </h3>
-                <p className="text-[0.88rem] text-[var(--text-secondary)] leading-[1.7]">
+                <p className="text-[0.88rem] text-[var(--text-secondary)] leading-[1.5] m-0">
                   {card.description}
                 </p>
               </div>

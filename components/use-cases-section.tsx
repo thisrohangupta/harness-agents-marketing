@@ -60,7 +60,7 @@ const useCases = [
 export function UseCasesSection() {
   return (
     <section className="bg-[var(--bg-secondary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]" id="use-cases">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// USE CASES'}
         </div>
@@ -75,7 +75,7 @@ export function UseCasesSection() {
           {useCases.map((uc) => (
             <div
               key={uc.title}
-              className="bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-[14px] p-[2rem] transition-all hover:border-[var(--text-muted)] hover:-translate-y-[3px] reveal"
+              className="bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-[14px] p-6 transition-all hover:border-[var(--text-muted)] hover:-translate-y-[3px] reveal"
             >
               <span
                 className={`inline-block text-[0.65rem] uppercase tracking-[0.08em] font-bold px-2.5 py-1 rounded-md mb-[1rem] ${uc.badgeClass}`}
