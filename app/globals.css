@@ -5,6 +5,7 @@
   --font-mono: var(--font-mono-loaded), 'JetBrains Mono', monospace;
 }
 
+/* ── CSS Variables (unlayered — just definitions, no conflicts) ── */
 :root {
   --bg-primary: #0a0a0f;
   --bg-secondary: #111118;
@@ -25,25 +26,28 @@
   --glow-purple: rgba(124, 92, 252, 0.12);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ── Base resets in @layer base so Tailwind utilities can override ── */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
-/* ── Animations ── */
+/* ── Animations (unlayered — just @keyframes definitions) ── */
 @keyframes pulse-glow {
   0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(1); }
   50% { opacity: 0.8; transform: translateX(-50%) scale(1.1); }
@@ -59,55 +63,59 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Reveal on scroll ── */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ── Grid Layouts ── */
-.arch-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-@media (max-width: 768px) {
-  .arch-grid {
-    grid-template-columns: 1fr;
+/* ── Component classes in @layer components so utilities can override ── */
+@layer components {
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   }
-}
 
-.use-case-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-}
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-.principles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
+  /* Grid Layouts */
+  .arch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
 
-.security-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.2rem;
-}
+  .use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 
-/* ── Responsive ── */
-@media (max-width: 768px) {
-  .use-case-grid,
-  .principles-grid,
+  .principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
   .security-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  /* Responsive grid fallbacks */
+  @media (max-width: 1024px) {
+    .use-case-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .arch-grid,
+    .use-case-grid,
+    .principles-grid,
+    .security-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }

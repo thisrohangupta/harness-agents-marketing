@@ -30,45 +30,47 @@ const timelineItems = [
 
 export function RoadmapSection() {
   return (
-    <section className="bg-[var(--bg-secondary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]" id="roadmap">
+    <section className="bg-[var(--bg-secondary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-5" id="roadmap">
       <div className="max-w-[1200px] mx-auto">
-        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
+        <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
           {'// ROADMAP'}
         </div>
-        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-[1rem] text-[var(--text-primary)] reveal">
+        <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
           {"What\u2019s Shipping"}
         </h2>
-        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
+        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-12 reveal">
           Harness Agents is being delivered iteratively — foundations first, extensibility next, then the marketplace ecosystem.
         </div>
 
         <div className="relative pl-10 reveal">
           {/* Timeline line */}
           <div
-            className="absolute left-[14px] top-0 bottom-0 w-0.5"
+            className="absolute left-[14px] top-0 bottom-0 w-[2px]"
             style={{
               background: 'linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--border-color))',
             }}
           />
 
           {timelineItems.map((item, i) => (
-            <div key={i} className="relative mb-[2.5rem] pl-5">
+            <div key={i} className="relative mb-10 pl-5">
               {/* Dot */}
               <div
-                className={`absolute left-[-33px] top-[6px] w-3 h-3 rounded-full border-2 ${
+                className={`absolute left-[-33px] top-[24px] w-3 h-3 rounded-full border-2 ${
                   item.shipped
                     ? "bg-[var(--accent-green)] border-[var(--accent-green)]"
                     : "bg-[var(--bg-secondary)] border-[var(--accent-blue)]"
                 }`}
               />
-              <div className="font-mono text-[0.72rem] text-[var(--accent-blue)] uppercase tracking-[0.08em] mb-1">
-                {item.date}{' '}
-                <span className={`inline-block text-[0.62rem] uppercase px-2 py-0.5 rounded font-bold tracking-[0.06em] ml-2 ${item.badgeClass}`}>
-                  {item.badge}
-                </span>
+              <div className="bg-[var(--bg-card)] border border-[var(--border-color)] rounded-[14px] p-6 transition-all duration-300 hover:border-[var(--text-muted)] hover:bg-[var(--bg-card-hover)]">
+                <div className="font-mono text-[0.72rem] text-[var(--accent-blue)] uppercase tracking-[0.08em] mb-2">
+                  {item.date}{' '}
+                  <span className={`inline-block text-[0.62rem] uppercase px-2 py-0.5 rounded font-bold tracking-[0.06em] ml-2 ${item.badgeClass}`}>
+                    {item.badge}
+                  </span>
+                </div>
+                <h3 className="text-[1rem] font-bold mb-2 text-[var(--text-primary)]">{item.title}</h3>
+                <p className="text-[0.85rem] text-[var(--text-secondary)] leading-[1.7]">{item.description}</p>
               </div>
-              <h3 className="text-[1rem] font-bold mb-[0.4rem] text-[var(--text-primary)]">{item.title}</h3>
-              <p className="text-[0.85rem] text-[var(--text-secondary)] leading-[1.7]">{item.description}</p>
             </div>
           ))}
         </div>

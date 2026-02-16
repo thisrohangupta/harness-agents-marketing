@@ -98,7 +98,7 @@ export function ArchitectureSection() {
   const [activeTab, setActiveTab] = useState<TabId>("runtime")
 
   return (
-    <section id="architecture" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]">
+    <section id="architecture" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-5">
       <div className="max-w-[1200px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// ARCHITECTURE'}
@@ -116,9 +116,9 @@ export function ArchitectureSection() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-5 py-2.5 border-none text-[0.82rem] font-semibold rounded-lg cursor-pointer transition-all font-sans ${
+                className={`px-5 py-2.5 border-none text-[0.82rem] font-semibold rounded-lg cursor-pointer transition-all duration-250 font-sans ${
                   activeTab === tab.id
-                    ? "bg-[var(--accent-blue)] text-white"
+                    ? "bg-[var(--accent-blue)] text-white shadow-[0_2px_12px_rgba(0,153,255,0.3)]"
                     : "bg-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-card-hover)]"
                 }`}
               >

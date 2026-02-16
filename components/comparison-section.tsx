@@ -45,7 +45,7 @@ const rows = [
 
 export function ComparisonSection() {
   return (
-    <section id="comparison" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]">
+    <section id="comparison" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-5">
       <div className="max-w-[1200px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-[1rem] font-mono reveal">
           {'// DIFFERENTIATION'}
