@@ -59,7 +59,7 @@ const useCases = [
 
 export function UseCasesSection() {
   return (
-    <section className="bg-[var(--bg-secondary)] py-24 px-8 relative max-md:py-[60px] max-md:px-5" id="use-cases">
+    <section className="bg-[var(--bg-secondary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]" id="use-cases">
       <div className="max-w-[1100px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
           {'// USE CASES'}
@@ -67,11 +67,11 @@ export function UseCasesSection() {
         <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
           What Can Be Built with Agents
         </h2>
-        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-12 reveal">
+        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
           Agents handle the high-value, judgment-intensive work that can{"'"}t be reduced to simple scripts — but shouldn{"'"}t require a human in the loop for every instance.
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid gap-6 max-md:grid-cols-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
           {useCases.map((uc) => (
             <div
               key={uc.title}

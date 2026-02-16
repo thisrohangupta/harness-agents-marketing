@@ -1,6 +1,6 @@
 export function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100] bg-[rgba(10,10,15,0.85)] backdrop-blur-[20px] border-b border-[var(--border-subtle)] px-8 h-16 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-[100] bg-[rgba(10,10,15,0.85)] backdrop-blur-[20px] border-b border-[var(--border-subtle)] px-8 h-16 flex items-center justify-between max-md:px-4">
       <div className="flex items-center gap-2.5 font-bold text-[1.1rem] tracking-[-0.02em] text-[var(--text-primary)]">
         <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7">
           <rect width="32" height="32" rx="8" fill="url(#nav-g)" />

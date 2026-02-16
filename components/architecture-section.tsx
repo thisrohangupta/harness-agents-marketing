@@ -98,7 +98,7 @@ export function ArchitectureSection() {
   const [activeTab, setActiveTab] = useState<TabId>("runtime")
 
   return (
-    <section id="architecture" className="py-24 px-8 relative max-md:py-[60px] max-md:px-5">
+    <section id="architecture" className="py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]">
       <div className="max-w-[1100px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
           {'// ARCHITECTURE'}
@@ -106,12 +106,12 @@ export function ArchitectureSection() {
         <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
           How Agents Work
         </h2>
-        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-12 reveal">
+        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
           Agents compose three layers: the execution runtime (Harness Pipelines), the intelligence layer (LLM + Knowledge Graph), and the tool layer (MCP + Harness APIs). Each layer is independently configurable.
         </div>
 
-        <div className="mt-10 reveal">
-          <div className="flex gap-1 bg-[var(--bg-card)] rounded-[12px] p-1 border border-[var(--border-color)] w-fit mb-8 max-md:flex-wrap">
+        <div className="mt-[2.5rem] reveal">
+          <div className="flex gap-1 bg-[var(--bg-card)] rounded-[12px] p-1 border border-[var(--border-color)] w-fit mb-[2rem] max-md:flex-wrap">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -129,7 +129,8 @@ export function ArchitectureSection() {
 
           <div
             key={activeTab}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid gap-6 max-md:grid-cols-1"
+            style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' } as React.CSSProperties}
             style={{ animation: "fade-up 0.4s ease-out" }}
           >
             {tabContent[activeTab].map((card) => (

@@ -1,16 +1,16 @@
 export function CtaSection() {
   return (
-    <section className="text-center bg-[var(--bg-primary)] py-[120px] px-8 relative">
+    <section className="text-center bg-[var(--bg-primary)] py-[120px] px-8 relative max-md:px-[1.2rem]">
       <div
         className="absolute bottom-[-100px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] pointer-events-none"
         style={{
           background: 'radial-gradient(circle, var(--glow-purple) 0%, transparent 70%)',
         }}
       />
-      <h2 className="text-[clamp(2rem,4vw,2.8rem)] font-extrabold tracking-[-0.03em] mb-4 relative text-[var(--text-primary)] reveal">
+      <h2 className="text-[clamp(2rem,4vw,2.8rem)] font-extrabold tracking-[-0.03em] mb-[1rem] relative text-[var(--text-primary)] reveal">
         AI for Everything After Code
       </h2>
-      <p className="text-[var(--text-secondary)] text-[1.05rem] max-w-[560px] mx-auto mb-8 relative leading-[1.8] reveal">
+      <p className="text-[var(--text-secondary)] text-[1.05rem] max-w-[560px] mx-auto mb-[2rem] relative leading-[1.8] reveal">
         Harness Agents bring autonomous, governed, observable intelligence to your pipelines — so your team can focus on building what matters.
       </p>
       <div className="flex gap-4 justify-center flex-wrap reveal">
@@ -40,7 +40,7 @@ export function CtaSection() {
 
 export function Footer() {
   return (
-    <footer className="py-12 px-8 border-t border-[var(--border-subtle)] text-center text-[0.78rem] text-[var(--text-muted)]">
+    <footer className="py-[3rem] px-8 border-t border-[var(--border-subtle)] text-center text-[0.78rem] text-[var(--text-muted)]">
       <p>
         {'Harness AI \u00B7 Agents \u00B7 '}
         <a

@@ -30,7 +30,7 @@ const timelineItems = [
 
 export function RoadmapSection() {
   return (
-    <section className="bg-[var(--bg-secondary)] py-24 px-8 relative max-md:py-[60px] max-md:px-5" id="roadmap">
+    <section className="bg-[var(--bg-secondary)] py-[100px] px-8 relative max-md:py-[60px] max-md:px-[1.2rem]" id="roadmap">
       <div className="max-w-[1100px] mx-auto">
         <div className="text-[0.7rem] uppercase tracking-[0.15em] text-[var(--accent-blue)] font-semibold mb-4 font-mono reveal">
           {'// ROADMAP'}
@@ -38,7 +38,7 @@ export function RoadmapSection() {
         <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold tracking-[-0.03em] leading-[1.2] mb-4 text-[var(--text-primary)] reveal">
           {"What\u2019s Shipping"}
         </h2>
-        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-12 reveal">
+        <div className="text-[1.05rem] text-[var(--text-secondary)] max-w-[700px] leading-[1.8] mb-[3rem] reveal">
           Harness Agents is being delivered iteratively — foundations first, extensibility next, then the marketplace ecosystem.
         </div>
 
@@ -52,7 +52,7 @@ export function RoadmapSection() {
           />
 
           {timelineItems.map((item, i) => (
-            <div key={i} className="relative mb-10 pl-5">
+            <div key={i} className="relative mb-[2.5rem] pl-5">
               {/* Dot */}
               <div
                 className={`absolute left-[-33px] top-[6px] w-3 h-3 rounded-full border-2 ${

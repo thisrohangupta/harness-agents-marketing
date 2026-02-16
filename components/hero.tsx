@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="pt-40 pb-24 px-8 text-center relative overflow-hidden max-md:pt-[120px] max-md:pb-[60px] max-md:px-5">
+    <section className="pt-[160px] pb-[100px] px-8 text-center relative overflow-hidden max-md:pt-[120px] max-md:pb-[60px] max-md:px-[1.2rem]">
       {/* Glow background */}
       <div
         className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[900px] h-[900px] pointer-events-none"
@@ -10,7 +10,7 @@ export function Hero() {
         }}
       />
       <div
-        className="inline-flex items-center gap-2 bg-[var(--bg-card)] border border-[var(--border-color)] rounded-full px-[18px] py-1.5 text-[0.8rem] text-[var(--text-secondary)] mb-8 relative"
+        className="inline-flex items-center gap-2 bg-[var(--bg-card)] border border-[var(--border-color)] rounded-full px-[18px] py-1.5 text-[0.8rem] text-[var(--text-secondary)] mb-[2rem] relative"
         style={{ animation: 'fade-up 0.8s ease-out' }}
       >
         <span
@@ -20,7 +20,7 @@ export function Hero() {
         Introducing Harness Agents
       </div>
       <h1
-        className="text-[clamp(2.8rem,6vw,4.5rem)] font-extrabold tracking-[-0.04em] leading-[1.1] max-w-[900px] mx-auto mb-6 relative"
+        className="text-[clamp(2.8rem,6vw,4.5rem)] font-extrabold tracking-[-0.04em] leading-[1.1] max-w-[900px] mx-auto mb-[1.5rem] relative"
         style={{ animation: 'fade-up 0.8s ease-out 0.1s both' }}
       >
         <span className="bg-gradient-to-br from-[var(--accent-blue)] via-[var(--accent-cyan)] to-[var(--accent-purple)] bg-clip-text text-transparent">
@@ -30,7 +30,7 @@ export function Hero() {
         {'Pipeline\u2011Native AI Agents.'}
       </h1>
       <p
-        className="text-[1.15rem] text-[var(--text-secondary)] max-w-[680px] mx-auto mb-10 leading-[1.8] font-normal relative"
+        className="text-[1.15rem] text-[var(--text-secondary)] max-w-[680px] mx-auto mb-[2.5rem] leading-[1.8] font-normal relative"
         style={{ animation: 'fade-up 0.8s ease-out 0.2s both' }}
       >
         Harness Agents are AI-powered autonomous workers that run inside your pipelines — building, deploying, testing, remediating, and optimizing your software delivery lifecycle from commit to production.
@@ -58,7 +58,7 @@ export function Hero() {
         </a>
       </div>
       <div
-        className="flex gap-12 justify-center mt-14 max-md:gap-6 max-md:flex-wrap"
+        className="flex gap-[3rem] justify-center mt-[3.5rem] max-md:gap-6 max-md:flex-wrap"
         style={{ animation: 'fade-up 0.8s ease-out 0.4s both' }}
       >
         <div className="text-center">
