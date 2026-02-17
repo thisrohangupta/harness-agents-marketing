@@ -11,14 +11,14 @@ const useCases = [
     badgeClass: "bg-[rgba(0,214,143,0.12)] text-[var(--accent-green)]",
     title: "Code Coverage",
     description:
-      "Analyzes your codebase, identifies coverage gaps, generates comprehensive unit tests to hit 90%+ overall and 80%+ per file, and opens a PR with a coverage report \u2014 fully autonomous.",
+      "Powered by your Harness CI Pipeline results, the agent identifies coverage gaps, generates targeted unit tests to meet user-defined thresholds, and opens a PR with a coverage report \u2014 maintaining a high level of quality and feedback for your coding agents.",
   },
   {
     badge: "Code Quality",
     badgeClass: "bg-[rgba(124,92,252,0.12)] text-[var(--accent-purple)]",
     title: "Code Review",
     description:
-      "Reviews every PR against your team\u2019s conventions, architecture guidelines, and best practices. Goes beyond linting \u2014 agents understand intent, suggest refactors, and catch logic errors.",
+      "Driven by your Harness CI Pipeline results, the agent reviews every PR with full build and test context \u2014 surfacing issues, suggesting refactors, and catching logic errors. Your SDLC feeding intelligence back into your codebase.",
   },
   {
     badge: "Feature Flags",
