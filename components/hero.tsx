@@ -66,10 +66,10 @@ export function Hero() {
         >
           <div className="text-center">
             <div className="text-[0.7rem] uppercase tracking-[0.1em] text-[var(--text-muted)] mb-1">
-              {"What's it for?"}
+              Designed for
             </div>
             <div className="text-[0.85rem] text-[var(--text-secondary)] font-medium">
-              Building a home for agents to operate within pipelines and based on system activities
+              Pipeline-native AI agents that ship, secure, and optimize your software delivery
             </div>
           </div>
           <div className="text-center">
