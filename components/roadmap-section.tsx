@@ -1,7 +1,7 @@
 const timelineItems = [
   {
-    date: "February 2026 \u2014 CKO",
-    badge: "Alpha",
+    date: "February 2026",
+    badge: "Building",
     badgeClass: "bg-[rgba(0,153,255,0.15)] text-[var(--accent-blue)]",
     title: "Foundation Release",
     description:
