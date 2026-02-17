@@ -71,7 +71,6 @@ function ArchCard({ icon, title, children }: { icon: string; title: string; chil
 function codeContent() {
   return (
     <>
-      <span className="text-[var(--accent-purple)]">version</span>: <span className="text-[var(--accent-green)]">1</span>{'\n'}
       <span className="text-[var(--accent-purple)]">pipeline</span>:{'\n'}
       {'  '}<span className="text-[var(--accent-purple)]">clone</span>:{'\n'}
       {'    '}<span className="text-[var(--accent-purple)]">depth</span>: <span className="text-[var(--accent-green)]">1</span>{'\n'}
