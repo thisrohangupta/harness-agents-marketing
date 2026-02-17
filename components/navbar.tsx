@@ -2,7 +2,7 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-[rgba(10,10,15,0.85)] backdrop-blur-[20px] border-b border-[var(--border-subtle)] h-16">
       <div className="max-w-[1200px] mx-auto px-8 h-full flex items-center justify-between max-md:px-5">
-        <div className="flex items-center gap-2.5 font-bold text-[1.1rem] tracking-[-0.02em] text-[var(--text-primary)]">
+        <a href="https://www.harness.io/products/harness-ai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 font-bold text-[1.1rem] tracking-[-0.02em] text-[var(--text-primary)] no-underline">
           <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7">
             <rect width="32" height="32" rx="8" fill="url(#nav-g)" />
             <path
@@ -23,7 +23,7 @@ export function Navbar() {
           <span className="bg-gradient-to-br from-[var(--accent-blue)] to-[var(--accent-purple)] text-white text-[0.65rem] font-bold px-2 py-[3px] rounded-full tracking-[0.06em] uppercase">
             Alpha
           </span>
-        </div>
+        </a>
         <div className="hidden md:flex gap-8">
           <a href="#what" className="text-[var(--text-secondary)] no-underline text-[0.85rem] font-medium transition-colors duration-200 hover:text-[var(--text-primary)]">
             Overview

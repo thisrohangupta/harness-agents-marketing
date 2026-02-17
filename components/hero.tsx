@@ -52,7 +52,9 @@ export function Hero() {
             Explore on GitHub
           </a>
           <a
-            href="#what"
+            href="https://developer.harness.io/docs/platform/harness-aida/harness-agents"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[10px] text-[0.9rem] font-semibold no-underline transition-all duration-250 bg-[var(--bg-card)] text-[var(--text-primary)] border border-[var(--border-color)] hover:bg-[var(--bg-card-hover)] hover:border-[var(--text-muted)]"
           >
             Read the Docs
