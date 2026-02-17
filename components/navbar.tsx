@@ -20,9 +20,6 @@ export function Navbar() {
             </defs>
           </svg>
           Harness AI
-          <span className="bg-gradient-to-br from-[var(--accent-blue)] to-[var(--accent-purple)] text-white text-[0.65rem] font-bold px-2 py-[3px] rounded-full tracking-[0.06em] uppercase">
-            Alpha
-          </span>
         </a>
         <div className="hidden md:flex gap-8">
           <a href="#what" className="text-[var(--text-secondary)] no-underline text-[0.85rem] font-medium transition-colors duration-200 hover:text-[var(--text-primary)]">
