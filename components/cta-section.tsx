@@ -77,7 +77,7 @@ export function Footer() {
               <h4 className="text-[0.75rem] uppercase tracking-[0.1em] text-[var(--text-muted)] font-semibold mb-3">Resources</h4>
               <div className="flex flex-col gap-2">
                 <a href="https://github.com/thisrohangupta/agents" target="_blank" rel="noopener noreferrer" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">GitHub</a>
-                <a href="#what" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">Documentation</a>
+                <a href="https://developer.harness.io/docs/platform/harness-aida/harness-agents" target="_blank" rel="noopener noreferrer" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">Documentation</a>
                 <a href="#use-cases" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">Agent Marketplace</a>
               </div>
             </div>
