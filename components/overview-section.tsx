@@ -86,7 +86,7 @@ function codeContent() {
       {'        '}- <span className="text-[var(--accent-purple)]">name</span>: <span className="text-[var(--accent-orange)]">coding_agent</span>              <span className="text-[var(--text-muted)] italic">{'# \u2190 AI-powered step'}</span>{'\n'}
       {'          '}<span className="text-[var(--accent-purple)]">run</span>:{'\n'}
       {'            '}<span className="text-[var(--accent-purple)]">container</span>:{'\n'}
-      {'              '}<span className="text-[var(--accent-purple)]">image</span>: <span className="text-[var(--accent-cyan)]">harness/codecov:coding-agent</span>{'\n'}
+      {'              '}<span className="text-[var(--accent-purple)]">image</span>: <span className="text-[var(--accent-cyan)]">himanshu6956/codecov:coding-agent-with-go</span>{'\n'}
       {'            '}<span className="text-[var(--accent-purple)]">with</span>:{'\n'}
       {'              '}<span className="text-[var(--accent-orange)]">max_iterations</span>: <span className="text-[var(--accent-green)]">{'"300"'}</span>{'\n'}
       {'              '}<span className="text-[var(--accent-orange)]">code_coverage</span>: <span className="text-[var(--accent-green)]">{'"true"'}</span>{'\n'}
@@ -102,7 +102,7 @@ function codeContent() {
       {'        '}- <span className="text-[var(--accent-purple)]">name</span>: <span className="text-[var(--accent-orange)]">push_and_create_pr</span>        <span className="text-[var(--text-muted)] italic">{'# \u2190 Opens PR with tests'}</span>{'\n'}
       {'          '}<span className="text-[var(--accent-purple)]">run</span>:{'\n'}
       {'            '}<span className="text-[var(--accent-purple)]">container</span>:{'\n'}
-      {'              '}<span className="text-[var(--accent-purple)]">image</span>: <span className="text-[var(--accent-cyan)]">harness/coding-agent-pr-skill</span>{'\n'}
+      {'              '}<span className="text-[var(--accent-purple)]">image</span>: <span className="text-[var(--accent-cyan)]">himanshu6956/create-pr-plugin:latest</span>{'\n'}
       {'            '}<span className="text-[var(--accent-purple)]">env</span>:{'\n'}
       {'              '}<span className="text-[var(--accent-orange)]">PLUGIN_PR_TITLE</span>: <span className="text-[var(--accent-green)]">{'"Code Coverage: Automated'}</span>{'\n'}
       {'                '}<span className="text-[var(--accent-green)]">{'coverage increase by Harness AI"'}</span>{'\n'}
@@ -111,7 +111,7 @@ function codeContent() {
       {'        '}- <span className="text-[var(--accent-purple)]">name</span>: <span className="text-[var(--accent-orange)]">post_coverage_comment</span>     <span className="text-[var(--text-muted)] italic">{'# \u2190 Posts report to PR'}</span>{'\n'}
       {'          '}<span className="text-[var(--accent-purple)]">run</span>:{'\n'}
       {'            '}<span className="text-[var(--accent-purple)]">container</span>:{'\n'}
-      {'              '}<span className="text-[var(--accent-purple)]">image</span>: <span className="text-[var(--accent-cyan)]">harness/coding-agent-comment-skill</span>{'\n'}
+      {'              '}<span className="text-[var(--accent-purple)]">image</span>: <span className="text-[var(--accent-cyan)]">abhinavharness/comment-plugin:latest</span>{'\n'}
       {'\n'}
       {'      '}<span className="text-[var(--accent-purple)]">platform</span>:{'\n'}
       {'        '}<span className="text-[var(--accent-purple)]">os</span>: linux{'\n'}
