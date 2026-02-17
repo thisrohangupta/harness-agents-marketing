@@ -66,6 +66,14 @@ export function Hero() {
         >
           <div className="text-center">
             <div className="text-[0.7rem] uppercase tracking-[0.1em] text-[var(--text-muted)] mb-1">
+              {"What's it for?"}
+            </div>
+            <div className="text-[0.85rem] text-[var(--text-secondary)] font-medium">
+              Building a home for agents to operate within pipelines and based on system activities
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-[0.7rem] uppercase tracking-[0.1em] text-[var(--text-muted)] mb-1">
               Stage
             </div>
             <div className="text-[0.85rem] text-[var(--text-secondary)] font-medium">
@@ -74,18 +82,10 @@ export function Hero() {
           </div>
           <div className="text-center">
             <div className="text-[0.7rem] uppercase tracking-[0.1em] text-[var(--text-muted)] mb-1">
-              Runtime
-            </div>
-            <div className="text-[0.85rem] text-[var(--text-secondary)] font-medium">
-              Harness Pipeline Engine
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-[0.7rem] uppercase tracking-[0.1em] text-[var(--text-muted)] mb-1">
               Models
             </div>
             <div className="text-[0.85rem] text-[var(--text-secondary)] font-medium">
-              {'Anthropic \u00B7 OpenAI'}
+              {'Anthropic \u00B7 OpenAI \u00B7 Gemini'}
             </div>
           </div>
         </div>
