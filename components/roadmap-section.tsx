@@ -1,5 +1,14 @@
 const timelineItems = [
   {
+    date: "January 2026",
+    badge: "Shipped",
+    badgeClass: "bg-[rgba(0,214,143,0.12)] text-[var(--accent-green)]",
+    title: "Code Review & Code Coverage Agents",
+    description:
+      "The first agents built on the new agentic architecture. The Code Review Agent delivers intelligent, context-aware reviews natively in Harness Code. The Code Coverage Agent analyzes and generates tests to close coverage gaps across any source code provider.",
+    shipped: true,
+  },
+  {
     date: "February 2026",
     badge: "Building",
     badgeClass: "bg-[rgba(0,153,255,0.15)] text-[var(--accent-blue)]",
