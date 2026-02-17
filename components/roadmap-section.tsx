@@ -26,6 +26,15 @@ const timelineItems = [
       "Event-driven agent triggers (incidents, drift detection, SLA breaches). Multi-agent orchestration for complex workflows. Advanced MCP Gateway with content inspection and policy enforcement.",
     shipped: false,
   },
+  {
+    date: "H2 2026",
+    badge: "Planned",
+    badgeClass: "bg-[rgba(124,92,252,0.12)] text-[var(--accent-purple)]",
+    title: "Agent Marketplace",
+    description:
+      "A public marketplace where customers, partners, and community members can publish, discover, and install agents \u2014 for use inside or outside their organization. Share best practices at scale and accelerate adoption across the ecosystem.",
+    shipped: false,
+  },
 ]
 
 export function RoadmapSection() {
