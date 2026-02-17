@@ -25,7 +25,7 @@ export function Hero() {
           style={{ animation: 'fade-up 0.8s ease-out 0.1s both' }}
         >
           <span className="bg-gradient-to-br from-[var(--accent-blue)] via-[var(--accent-cyan)] to-[var(--accent-purple)] bg-clip-text text-transparent">
-            Autonomous DevOps.
+            Autonomous DevSecOps.
           </span>
           <br />
           {'Pipeline\u2011Native AI Agents.'}
