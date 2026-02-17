@@ -5,7 +5,7 @@ const timelineItems = [
     badgeClass: "bg-[rgba(0,214,143,0.12)] text-[var(--accent-green)]",
     title: "Code Review & Code Coverage Agents",
     description:
-      "The first agents built on the new agentic architecture. The Code Review Agent delivers intelligent, context-aware reviews natively in Harness Code. The Code Coverage Agent analyzes and generates tests to close coverage gaps across any source code provider.",
+      "The first agents built on the new agentic architecture. Powered by your Harness CI Pipeline results, the Code Review Agent surfaces issues, suggests refactors, and catches logic errors with full build context. The Code Coverage Agent identifies gaps, generates targeted tests to meet user-defined thresholds, and opens PRs with coverage reports \u2014 your SDLC feeding intelligence back into your codebase.",
     shipped: true,
   },
   {
