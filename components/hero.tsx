@@ -69,7 +69,7 @@ export function Hero() {
               Stage
             </div>
             <div className="text-[0.85rem] text-[var(--text-secondary)] font-medium">
-              {'Alpha \u00B7 Limited Preview'}
+              Limited Preview
             </div>
           </div>
           <div className="text-center">
