@@ -47,17 +47,7 @@ export function Footer() {
         <div className="flex justify-between items-start max-md:flex-col max-md:gap-8">
           <div>
             <div className="flex items-center gap-2.5 font-bold text-[1rem] tracking-[-0.02em] text-[var(--text-primary)] mb-3">
-              <svg viewBox="0 0 32 32" fill="none" className="w-6 h-6">
-                <rect width="32" height="32" rx="8" fill="url(#footer-g)" />
-                <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" stroke="white" strokeWidth="1.5" fill="none" />
-                <circle cx="16" cy="16" r="3" fill="white" />
-                <defs>
-                  <linearGradient id="footer-g" x1="0" y1="0" x2="32" y2="32">
-                    <stop stopColor="#0099ff" />
-                    <stop offset="1" stopColor="#7c5cfc" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <img src="/harness-ai/agents/harness-ai.svg" alt="Harness AI" className="w-6 h-6" />
               Harness AI
             </div>
             <p className="text-[0.8rem] text-[var(--text-muted)] max-w-[300px] leading-[1.6]">
@@ -77,7 +67,7 @@ export function Footer() {
               <h4 className="text-[0.75rem] uppercase tracking-[0.1em] text-[var(--text-muted)] font-semibold mb-3">Resources</h4>
               <div className="flex flex-col gap-2">
                 <a href="https://github.com/thisrohangupta/agents" target="_blank" rel="noopener noreferrer" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">GitHub</a>
-                <a href="https://developer.harness.io/docs/platform/harness-aida/harness-agents" target="_blank" rel="noopener noreferrer" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">Documentation</a>
+                <a href="https://developer.harness.io/docs/platform/harness-ai/harness-agents/" target="_blank" rel="noopener noreferrer" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">Documentation</a>
                 <a href="#use-cases" className="text-[0.85rem] text-[var(--text-secondary)] no-underline transition-colors duration-200 hover:text-[var(--text-primary)]">Agent Marketplace</a>
               </div>
             </div>
